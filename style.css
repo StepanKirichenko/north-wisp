@@ -15,16 +15,17 @@ img {
   --color-background: #f8cb39;
   --color-text: #000;
 
-  --ff-normal: "Red Hat Display", san-serif;
-  --ff-gothic: "Dela Gothic One", san-serif;
+  --ff-normal: "Red Hat Display", sans-serif;
+  --ff-gothic: "Dela Gothic One", sans-serif;
 
-  --fs-h1: 72px;
-  --fs-h2: 60px;
+  --fs-h1: 50px;
+  --fs-h2: 40px;
   --fs-h3: 45px;
   --fs-text: 30px;
   --fs-text-medium: 24px;
   --fs-text-small: 20px;
   --fs-text-xs: 18px;
+  --fs-text-xxs: 16px;
 }
 
 html {
@@ -53,7 +54,7 @@ body {
 .nav {
   display: flex;
   align-items: center;
-  margin: 40px 60px;
+  margin: 40px 70px;
 }
 
 .nav__links-holder {
@@ -77,4 +78,44 @@ body {
   color: var(--color-background);
   padding: 0.5em 2em;
   cursor: pointer;
+}
+
+.section {
+  padding: 70px;
+}
+
+.landing__hero {
+  position: relative;
+  padding-top: 150px;
+  padding-bottom: 200px;
+}
+
+.landing__hero__heading {
+  font-family: var(--ff-gothic);
+  font-size: var(--fs-h1);
+  margin-bottom: 12px;
+}
+
+.landing__hero__paragraph {
+  max-width: 18em;
+  margin-bottom: 36px;
+  font-size: var(--fs-text-xxs);
+}
+
+.landing__hero__image__container {
+  position: absolute;
+  top: -20px;
+  right: -80px;
+}
+
+.landing__hero__image {
+  width: 100%;
+}
+
+@media (max-width: 1200px) {
+  .landing__hero__image__container {
+    position: static;
+    display: flex;
+    justify-content: center;
+  }
 }
