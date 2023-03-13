@@ -72,6 +72,12 @@ body {
   text-decoration: none;
 }
 
+.nav__hamburger-icon {
+  display: none;
+  margin-left: auto;
+  cursor: pointer;
+}
+
 .footer {
   padding: var(--section-padding);
   font-size: var(--fs-text-xs);
@@ -208,6 +214,14 @@ body {
 
   :root {
     --section-padding: 50px;
+  }
+
+  .nav__links-holder {
+    display: none;
+  }
+
+  .nav__hamburger-icon {
+    display: block;
   }
 }
 
