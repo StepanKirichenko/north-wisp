@@ -1,0 +1,80 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font: inherit;
+}
+
+img {
+  display: block;
+}
+
+:root {
+  --color-background: #f2cf2b;
+  --color-text: #000;
+
+  --ff-normal: "Red Hat Display", san-serif;
+  --ff-gothic: "Dela Gothic One", san-serif;
+
+  --fs-h1: 72px;
+  --fs-h2: 60px;
+  --fs-h3: 45px;
+  --fs-text: 30px;
+  --fs-text-medium: 24px;
+  --fs-text-small: 20px;
+  --fs-text-xs: 18px;
+}
+
+html {
+  background-color: var(--color-background);
+  color: var(--color-text);
+  font-family: var(--ff-normal);
+  font-size: var(--fs-text);
+}
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+}
+
+.border {
+  margin: 60px;
+  border: 2px solid var(--color-text);
+  min-height: 100vh;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  margin: 40px 60px;
+}
+
+.nav__links-holder {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.nav__link {
+  font-size: var(--fs-text-xs);
+  color: var(--color-text);
+  text-decoration: none;
+}
+
+.button {
+  font-size: var(--fs-text-xs);
+  font-weight: 500;
+  border: none;
+  background-color: var(--color-text);
+  color: var(--color-background);
+  padding: 0.5em 2em;
+  cursor: pointer;
+}
