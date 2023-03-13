@@ -209,7 +209,7 @@ body {
   }
 
   .border {
-    margin: 45px;
+    margin: 40px;
   }
 
   :root {
@@ -235,10 +235,13 @@ body {
   }
 
   .border {
-    margin: 30px;
+    margin: 16px;
   }
 
   :root {
     --section-padding: 30px;
+
+    --fs-h1: 30px;
+    --fs-h2: 30px;
   }
 }
