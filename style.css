@@ -113,9 +113,15 @@ body {
 }
 
 @media (max-width: 1200px) {
+  .landing__hero {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
   .landing__hero__image__container {
     position: static;
     display: flex;
     justify-content: center;
+    margin-top: 20px;
   }
 }
