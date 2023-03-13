@@ -42,6 +42,14 @@ body {
   justify-content: center;
 }
 
+.flex {
+  display: flex;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
 .container {
   width: 100%;
   max-width: 1200px;
@@ -134,6 +142,17 @@ body {
   border-bottom: 2px solid var(--color-text);
 }
 
+.section__heading {
+  font-family: var(--ff-gothic);
+  font-size: var(--fs-h2);
+  margin-bottom: 20px;
+}
+
+.section__text {
+  font-size: var(--fs-text-xxs);
+  max-width: 50%;
+}
+
 .landing__hero {
   position: relative;
   padding-top: 150px;
@@ -184,6 +203,55 @@ body {
   font-size: var(--fs-text-xxs);
 }
 
+.landing__programs__list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 12px;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+.program-card {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  padding: 20px;
+  border: 2px solid var(--color-text);
+  box-shadow: 2px 2px var(--color-text);
+}
+
+.program-card__title {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.program-card__info__paragraph {
+  font-size: 16px;
+}
+
+.program-card__image-container {
+  position: absolute;
+  right: 30px;
+  bottom: 30px;
+  top: 30px;
+}
+
+.program-card__image {
+  width: auto;
+  height: 100%;
+}
+
+.program-card__link {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
 @media (max-width: 1200px) {
   .landing__hero {
     padding-top: 0;
@@ -222,6 +290,15 @@ body {
 
   .nav__hamburger-icon {
     display: block;
+  }
+
+  .landing__programs__list {
+    grid-template-columns: 1fr;
+    row-gap: 30px;
+  }
+
+  .program-card {
+    max-width: 600px;
   }
 }
 
