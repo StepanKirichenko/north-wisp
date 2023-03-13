@@ -70,6 +70,47 @@ body {
   text-decoration: none;
 }
 
+.footer {
+  padding: 70px;
+  font-size: var(--fs-text-xs);
+}
+
+.footer__logo {
+  display: block;
+  margin-bottom: 16px;
+}
+
+.footer__address-and-nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 60px;
+  margin-bottom: 50px;
+}
+
+.footer__address {
+  margin-top: 12px;
+}
+
+.footer__nav__links-container {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 60% 1fr;
+  column-gap: 50px;
+  row-gap: 12px;
+}
+
+.footer__nav__link {
+  color: var(--color-text);
+  text-decoration: none;
+}
+
+.footer__social-media__container {
+  display: flex;
+  gap: 12px;
+  list-style: none;
+  margin-bottom: 12px;
+}
+
 .button {
   font-size: var(--fs-text-xs);
   font-weight: 500;
@@ -82,12 +123,13 @@ body {
 
 .section {
   padding: 70px;
+  border-bottom: 2px solid var(--color-text);
 }
 
 .landing__hero {
   position: relative;
   padding-top: 150px;
-  padding-bottom: 200px;
+  padding-bottom: 250px;
 }
 
 .landing__hero__heading {
@@ -112,10 +154,32 @@ body {
   width: 100%;
 }
 
+.landing__hero__features {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 30px;
+  row-gap: 50px;
+}
+
+.landing__hero__feature__number {
+  font-family: var(--ff-gothic);
+  font-size: var(--fs-h2);
+}
+
+.landing__hero__feature__heading {
+  font-size: var(--fs-text-xs);
+  margin-bottom: 8px;
+}
+
+.landing__hero__feature__paragraph {
+  font-size: var(--fs-text-xxs);
+}
+
 @media (max-width: 1200px) {
   .landing__hero {
     padding-top: 0;
-    padding-bottom: 0;
+    padding-bottom: 50px;
   }
 
   .landing__hero__image__container {
@@ -123,5 +187,26 @@ body {
     display: flex;
     justify-content: center;
     margin-top: 20px;
+  }
+}
+
+@media (max-width: 900px) {
+  .landing__hero__features {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer__address-and-nav {
+    grid-template-columns: 1fr;
+    row-gap: 50px;
+  }
+}
+
+@media (max-width: 600px) {
+  .landing__hero__features {
+    grid-template-columns: 1fr;
+  }
+
+  .footer__nav__links-container {
+    grid-template-columns: 1fr;
   }
 }
