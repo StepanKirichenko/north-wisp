@@ -153,6 +153,11 @@ body {
   box-shadow: 3px 3px var(--color-text);
 }
 
+.button:hover {
+  translate: -2px -2px;
+  box-shadow: 5px 5px var(--color-text);
+}
+
 .button:active {
   translate: 3px 3px;
   box-shadow: none;
