@@ -44,6 +44,11 @@ body {
   justify-content: center;
 }
 
+.image {
+  width: 100%;
+  height: auto;
+}
+
 .flex {
   display: flex;
 }
@@ -153,6 +158,12 @@ body {
   color: var(--color-background);
   padding: 0.5em 2em;
   cursor: pointer;
+}
+
+.page__heading {
+  font-family: var(--ff-gothic);
+  font-size: var(--fs-h1);
+  margin-bottom: 20px;
 }
 
 .section {
@@ -337,6 +348,15 @@ body {
   scale: 80% 80%;
 }
 
+.about__right-align {
+  display: flex;
+  justify-content: end;
+}
+
+.about__text__right-align {
+  text-align: end;
+}
+
 @media (max-width: 1200px) {
   .team-member-info__description-container {
     padding-left: 20px;
@@ -505,5 +525,13 @@ body {
 
   .landing__reviews {
     grid-template-columns: 1fr;
+  }
+
+  .about__right-align {
+    display: block;
+  }
+
+  .about__text__right-align {
+    text-align: start;
   }
 }
