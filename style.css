@@ -277,6 +277,12 @@ body {
   grid-template-columns: 1fr 1fr;
 }
 
+.team-member-info__image-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .team-member-info__image {
   width: 100%;
   height: auto;
@@ -341,7 +347,7 @@ body {
   }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 600px) {
   .team-member-info {
     grid-template-columns: 1fr;
   }
