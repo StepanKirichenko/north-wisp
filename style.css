@@ -21,6 +21,8 @@ img {
   --fs-h1: 50px;
   --fs-h2: 40px;
   --fs-h3: 45px;
+  --fs-h4: 22px;
+  --fs-h5: 18px;
   --fs-text: 30px;
   --fs-text-medium: 24px;
   --fs-text-small: 20px;
@@ -266,6 +268,67 @@ body {
   position: absolute;
   bottom: 20px;
   right: 20px;
+}
+
+.team-member-info {
+  margin-top: 50px;
+  border: 2px solid var(--color-text);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.team-member-info__image {
+  width: 100%;
+  height: auto;
+}
+
+.team-member-info__details {
+  border-left: 2px solid var(--color-text);
+  display: flex;
+  flex-direction: column;
+}
+
+.team-member-info__name-section {
+  border-bottom: 2px solid var(--color-text);
+  padding-left: 70px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.team-member-info__name {
+  font-size: var(--fs-h4);
+  font-weight: 700;
+}
+
+.team-member-info__job {
+  font-size: 12px;
+}
+
+.team-member-info__description-container {
+  padding: 20px 20px 20px 70px;
+  border-bottom: 2px solid var(--color-text);
+  flex: 1;
+}
+
+.team-member-info__description {
+  font-size: 16px;
+}
+
+.team-member-info__navigation {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.team-member-info__button {
+  background: none;
+  border: none;
+  border-left: 2px solid var(--color-text);
+  padding: 16px;
+  cursor: pointer;
+}
+
+.team-member-info__button:active img {
+  scale: 80% 80%;
 }
 
 @media (max-width: 1200px) {
