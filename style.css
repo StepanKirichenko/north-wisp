@@ -472,6 +472,11 @@ body {
     grid-template-columns: 1fr;
     row-gap: 50px;
   }
+
+  .landing__reviews {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 50px;
+  }
 }
 
 @media (max-width: 600px) {
@@ -496,5 +501,9 @@ body {
 
   .section__text {
     max-width: 100%;
+  }
+
+  .landing__reviews {
+    grid-template-columns: 1fr;
   }
 }
