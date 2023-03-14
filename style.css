@@ -135,6 +135,22 @@ body {
   color: var(--color-background);
   padding: 0.5em 2em;
   cursor: pointer;
+  box-shadow: 3px 3px var(--color-text);
+}
+
+.button:active {
+  translate: 3px 3px;
+  box-shadow: none;
+}
+
+.button--header {
+  font-size: var(--fs-text-xs);
+  font-weight: 500;
+  border: none;
+  background-color: var(--color-text);
+  color: var(--color-background);
+  padding: 0.5em 2em;
+  cursor: pointer;
 }
 
 .section {
