@@ -90,7 +90,7 @@ body {
 
 .footer {
   padding: var(--section-padding);
-  font-size: var(--fs-text-xs);
+  font-size: 16px;
 }
 
 .footer__logo {
@@ -366,6 +366,40 @@ body {
   font-size: var(--fs-h4);
   font-weight: 500;
   margin-bottom: 40px;
+}
+
+.landing__reviews {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 30px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.review-card {
+  border: 2px solid var(--color-text);
+  box-shadow: 2px 2px var(--color-text);
+  padding: 20px;
+  padding-bottom: 30px;
+}
+
+.review-card__name {
+  font-size: var(--fs-h4);
+  font-weight: 700;
+}
+
+.review-card__course {
+  font-size: var(--fs-h5);
+}
+
+.review-card__rating {
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.review-card__text {
+  font-size: 16px;
 }
 
 @media (max-width: 1200px) {
