@@ -254,6 +254,7 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   column-gap: 12px;
+  row-gap: 12px;
   margin-top: 30px;
   margin-bottom: 50px;
 }
