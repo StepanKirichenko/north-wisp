@@ -332,6 +332,27 @@ body {
 }
 
 @media (max-width: 1200px) {
+  .team-member-info__description-container {
+    padding-left: 20px;
+  }
+
+  .team-member-info__name-section {
+    padding-left: 20px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .team-member-info {
+    grid-template-columns: 1fr;
+  }
+
+  .team-member-info__details {
+    border: none;
+    border-top: 2px solid var(--color-text);
+  }
+}
+
+@media (max-width: 1200px) {
   .landing__hero {
     padding-top: 0;
     padding-bottom: 50px;
