@@ -352,6 +352,22 @@ body {
   }
 }
 
+.landing__consultation {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 50px;
+}
+
+.landing__consultation__info {
+  padding-top: 80px;
+}
+
+.landing__consultation__text {
+  font-size: var(--fs-h4);
+  font-weight: 500;
+  margin-bottom: 40px;
+}
+
 @media (max-width: 1200px) {
   .landing__hero {
     padding-top: 0;
