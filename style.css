@@ -374,6 +374,17 @@ body {
   margin-bottom: 40px;
 }
 
+.landing__consultation__image-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.landing__consultation__image {
+  width: 100%;
+  height: auto;
+}
+
 .landing__reviews {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -456,6 +467,11 @@ body {
   .program-card {
     max-width: 600px;
   }
+
+  .landing__consultation {
+    grid-template-columns: 1fr;
+    row-gap: 50px;
+  }
 }
 
 @media (max-width: 600px) {
@@ -476,5 +492,9 @@ body {
 
     --fs-h1: 30px;
     --fs-h2: 30px;
+  }
+
+  .section__text {
+    max-width: 100%;
   }
 }
