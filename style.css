@@ -283,14 +283,15 @@ body {
 
 .program-card__image-container {
   position: absolute;
-  right: 30px;
-  bottom: 30px;
-  top: 30px;
+  right: 10%;
+  bottom: 10%;
+  left: 20%;
+  /* top: 30px; */
 }
 
 .program-card__image {
-  width: auto;
-  height: 100%;
+  width: 100%;
+  height: auto;
 }
 
 .program-card__link {
