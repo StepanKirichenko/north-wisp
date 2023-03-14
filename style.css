@@ -431,6 +431,11 @@ body {
     justify-content: center;
     margin-top: 20px;
   }
+
+  .landing__programs__list {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 15px;
+  }
 }
 
 @media (max-width: 900px) {
@@ -457,15 +462,6 @@ body {
 
   .nav__hamburger-icon {
     display: block;
-  }
-
-  .landing__programs__list {
-    grid-template-columns: 1fr;
-    row-gap: 30px;
-  }
-
-  .program-card {
-    max-width: 600px;
   }
 
   .landing__consultation {
@@ -501,6 +497,10 @@ body {
 
   .section__text {
     max-width: 100%;
+  }
+
+  .landing__programs__list {
+    grid-template-columns: 1fr;
   }
 
   .landing__reviews {
