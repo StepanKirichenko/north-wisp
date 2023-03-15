@@ -172,7 +172,7 @@ body {
 
 .button:hover {
   translate: -2px -2px;
-  box-shadow: 5px 5 px var(--color-text);
+  box-shadow: 5px 5px var(--color-text);
 }
 
 .button:active {
