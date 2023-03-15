@@ -1,0 +1,73 @@
+.right-align {
+  display: flex;
+  justify-content: end;
+}
+
+.text__right-align {
+  text-align: end;
+}
+
+.hero__image {
+  margin: 30px 0;
+}
+
+.team-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 20px;
+  row-gap: 20px;
+  margin-top: 50px;
+}
+
+.team-card__image {
+  width: 100%;
+  height: auto;
+  border: var(--border);
+  box-shadow: var(--box-shadow);
+  margin-bottom: 16px;
+}
+
+.team-card__name {
+  font-size: var(--fs-h4);
+  font-weight: 700;
+}
+
+.team-card__job {
+  font-size: var(--fs-text-xxs);
+}
+
+.hiring-links__list {
+  list-style: none;
+  margin-top: 50px;
+}
+
+.hiring-link {
+  display: flex;
+  justify-content: space-between;
+  border: var(--border);
+  box-shadow: var(--box-shadow);
+  padding: 20px 40px;
+  font-size: var(--fs-h4);
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.hiring-link:hover {
+  translate: -2px -2px;
+  box-shadow: 4px 4px var(--color-text);
+}
+
+.hiring-link:active {
+  translate: 2px 2px;
+  box-shadow: none;
+}
+
+@media (max-width: 600px) {
+  .hero__text {
+    text-align: center;
+  }
+
+  .right-align {
+    justify-content: center;
+  }
+}
