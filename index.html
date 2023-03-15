@@ -7,13 +7,13 @@
     <title>North Wisp</title>
     <link rel="stylesheet" href="/style.css" />
     <script defer type="module" src="/main.js"></script>
+    <script defer type="module" src="/navbar.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Red+Hat+Display:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <script defer src="/main.js" type="text/javascript"></script>
   </head>
   <body>
     <div class="container">
@@ -23,17 +23,32 @@
             <a href="/">
               <img src="/logos/north_wisp_logo.svg" alt="north wisp" />
             </a>
-            <div class="nav__links-holder">
+            <div id="hamburger-button" class="nav__hamburger-button">
+              <img
+                id="hamburger-icon--closed"
+                class="nav__hamburger-icon visible"
+                src="/icons/hamburger.png"
+                width="40"
+                height="24"
+              />
+              <img
+                id="hamburger-icon--opened"
+                class="nav__hamburger-icon"
+                src="/icons/cross.png "
+                width="32"
+                height="32"
+              />
+            </div>
+            <div id="nav__links-holder" class="nav__links-holder">
               <a href="/programs/" class="nav__link">Programs</a>
               <a href="#" class="nav__link">Blog</a>
               <a href="/about/" class="nav__link">About us</a>
               <button class="button--header">Log in</button>
             </div>
-            <img class="nav__hamburger-icon" src="/icons/hamburger.png" />
           </nav>
         </header>
 
-        <main>
+        <main id="main">
           <section class="section">
             <div class="landing__hero">
               <h1 class="landing__hero__heading">Learn Irish Online</h1>
@@ -290,7 +305,7 @@
           </section>
         </main>
 
-        <footer class="footer">
+        <footer id="footer" class="footer">
           <img class="footer__logo" src="/logos/north_wisp_logo.svg" />
           <div class="footer__address-and-nav">
             <div class="footer__address__container">
