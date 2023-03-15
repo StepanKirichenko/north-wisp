@@ -347,10 +347,6 @@ body {
   .nav__hamburger-icon.visible {
     display: block;
   }
-
-  .team-cards {
-    grid-template-columns: 1fr 1fr;
-  }
 }
 
 @media (max-width: 600px) {
@@ -383,11 +379,6 @@ body {
 
   .about__text__right-align {
     text-align: start;
-  }
-
-  .team-cards {
-    grid-template-columns: 1fr;
-    row-gap: 40px;
   }
 
   .nav__links-holder.visible {
