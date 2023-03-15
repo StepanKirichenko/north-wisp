@@ -88,7 +88,7 @@ body {
   display: grid;
   grid-template-columns: auto auto;
   align-items: center;
-  margin: 40px var(--section-padding);
+  margin: var(--section-padding) var(--section-padding) 30px;
 }
 
 .nav__links-holder {
@@ -197,7 +197,9 @@ body {
 }
 
 .section {
-  padding: var(--section-padding);
+  margin-top: var(--section-padding);
+  padding: 0 var(--section-padding) var(--section-padding)
+    var(--section-padding);
   border-bottom: 2px solid var(--color-text);
 }
 
@@ -341,7 +343,7 @@ body {
   }
 
   :root {
-    --section-padding: 50px;
+    --section-padding: 30px;
   }
 
   .nav {
@@ -393,7 +395,7 @@ body {
   }
 
   :root {
-    --section-padding: 30px;
+    --section-padding: 16px;
 
     --fs-h1: 36px;
     --fs-h2: 30px;

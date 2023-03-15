@@ -180,6 +180,12 @@
   .hero {
     padding-top: 0;
     padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hero__heading {
+    order: 1;
   }
 
   .hero__image__container {
@@ -187,6 +193,17 @@
     display: flex;
     justify-content: center;
     margin-top: 20px;
+    margin-bottom: 40px;
+    order: 2;
+    max-width: 400px;
+  }
+
+  .hero__paragraph {
+    order: 3;
+  }
+
+  .hero__button-container {
+    order: 4;
   }
 
   .consultation {
@@ -215,6 +232,23 @@
 }
 
 @media (max-width: 600px) {
+  .hero {
+    align-items: center;
+  }
+
+  .hero__heading {
+    text-align: center;
+  }
+
+  .hero__paragraph {
+    text-align: center;
+  }
+
+  .hero__button-container {
+    display: flex;
+    justify-content: center;
+  }
+
   .hero__features {
     grid-template-columns: 1fr;
   }
