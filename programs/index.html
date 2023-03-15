@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Programs | North Wisp</title>
     <link rel="stylesheet" href="/style.css" />
-    <script defer type="module" src="/main.js"></script>
+    <script defer type="module" src="/navbar.js"></script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -22,15 +23,30 @@
             <a href="/">
               <img src="/logos/north_wisp_logo.svg" alt="north wisp" />
             </a>
-            <div class="nav__links-holder">
-              <a href="/programs" class="nav__link nav__link--current"
+            <div id="hamburger-button" class="nav__hamburger-button">
+              <img
+                id="hamburger-icon--closed"
+                class="nav__hamburger-icon visible"
+                src="/icons/hamburger.png"
+                width="40"
+                height="24"
+              />
+              <img
+                id="hamburger-icon--opened"
+                class="nav__hamburger-icon"
+                src="/icons/cross.png "
+                width="32"
+                height="32"
+              />
+            </div>
+            <div id="nav__links-holder" class="nav__links-holder">
+              <a href="/programs/" class="nav__link nav__link--current"
                 >Programs</a
               >
               <a href="#" class="nav__link">Blog</a>
               <a href="/about/" class="nav__link">About us</a>
               <button class="button--header">Log in</button>
             </div>
-            <img class="nav__hamburger-icon" src="/icons/hamburger.png" />
           </nav>
         </header>
 

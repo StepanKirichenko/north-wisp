@@ -4,8 +4,8 @@ const navLinksHolder = document.querySelector("#nav__links-holder");
 const hamburgerButton = document.querySelector("#hamburger-button");
 const hamburgerIconClosed = document.querySelector("#hamburger-icon--closed");
 const hamburgerIconOpened = document.querySelector("#hamburger-icon--opened");
-const main = document.querySelector("#main");
-const footer = document.querySelector("#footer");
+const main = document.querySelector("main");
+const footer = document.querySelector("footer");
 
 function openMenu() {
   isMenuOpen = true;
