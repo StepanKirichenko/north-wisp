@@ -125,7 +125,7 @@ body {
 
 .footer__logo {
   display: block;
-  margin-bottom: 16px;
+  margin-bottom: 30px;
 }
 
 .footer__address-and-nav {
@@ -307,7 +307,7 @@ body {
 @media (max-width: 900px) {
   .footer__address-and-nav {
     grid-template-columns: 1fr;
-    row-gap: 50px;
+    row-gap: 30px;
   }
 
   .border {
