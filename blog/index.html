@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>North Wisp</title>
+    <link rel="stylesheet" href="/style.css" />
+    <script defer type="module" src="/main.js"></script>
+    <script defer type="module" src="/navbar.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Red+Hat+Display:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="border">
+        <header class="header">
+          <nav class="nav">
+            <a href="/">
+              <img src="/logos/north_wisp_logo.svg" alt="north wisp" />
+            </a>
+            <div id="hamburger-button" class="nav__hamburger-button">
+              <img
+                id="hamburger-icon--closed"
+                class="nav__hamburger-icon visible"
+                src="/icons/hamburger.svg"
+                width="40"
+                height="24"
+              />
+              <img
+                id="hamburger-icon--opened"
+                class="nav__hamburger-icon"
+                src="/icons/cross.svg "
+                width="32"
+                height="32"
+              />
+            </div>
+            <div id="nav__links-holder" class="nav__links-holder">
+              <a href="/programs/" class="nav__link">Programs</a>
+              <a href="/blog/" class="nav__link nav__link--current">Blog</a>
+              <a href="/about/" class="nav__link">About us</a>
+              <button class="button--header">Log in</button>
+            </div>
+          </nav>
+        </header>
+
+        <main>
+          <section class="section">
+            <div class="blog__hero">
+              <h1 class="page__heading blog__hero__heading">
+                How to start learning Irish from scratch?
+              </h1>
+              <p class="section__text blog__hero__text">
+                Find out how to quickly learn Irish and speak it from the very
+                first lesson.
+              </p>
+              <button class="button">Read more</button>
+              <div class="blog__hero__image-container">
+                <img
+                  src="/images/blog/blog_hero.png"
+                  class="image blog__hero__image"
+                />
+              </div>
+            </div>
+          </section>
+
+          <section class="section">
+            <h2 class="section__heading">Articles</h2>
+            <ul>
+              <li class="article-link__container">
+                <div class="article-link__title-container">
+                  <h3 class="article-link__title">
+                    International Irish Language Summer School for Adults
+                  </h3>
+                  <h4 class="article-link__topic">Irish language events</h4>
+                </div>
+                <div class="article-link__description-container">
+                  <p class="article-link__description">
+                    If you’re looking for a truly unique, authentic cultural
+                    experience this summer, we recommend registering for North
+                    Wisp Irish language summer school...
+                  </p>
+                </div>
+                <div class="article-link__link-container">
+                  <a href="#">
+                    <img src="/icons/arrow_down_right.svg" />
+                  </a>
+                </div>
+              </li>
+              <li class="article-link__container">
+                <div class="article-link__title-container">
+                  <h3 class="article-link__title">
+                    Recomendations for Learning Irish
+                  </h3>
+                  <h4 class="article-link__topic">Recomendation</h4>
+                </div>
+                <div class="article-link__description-container">
+                  <p class="article-link__description">
+                    The Irish language will be celebrated by Irish speakers all
+                    over the world in the coming weeks. There is no better time
+                    to learn Irish...
+                  </p>
+                </div>
+                <div class="article-link__link-container">
+                  <a href="#">
+                    <img src="/icons/arrow_down_right.svg" />
+                  </a>
+                </div>
+              </li>
+              <li class="article-link__container">
+                <div class="article-link__title-container">
+                  <h3 class="article-link__title">Benefits of Bilingualism</h3>
+                  <h4 class="article-link__topic">Research</h4>
+                </div>
+                <div class="article-link__description-container">
+                  <p class="article-link__description">
+                    The ‘bilingual’ is more common today than a person who can
+                    speak only one language. Ireland is a bilingual country with
+                    both Irish and English...
+                  </p>
+                </div>
+                <div class="article-link__link-container">
+                  <a href="#">
+                    <img src="/icons/arrow_down_right.svg" />
+                  </a>
+                </div>
+              </li>
+              <li class="article-link__container">
+                <div class="article-link__title-container">
+                  <h3 class="article-link__title">
+                    How to Prepare for the final Irish exam?
+                  </h3>
+                  <h4 class="article-link__topic">Recomendation</h4>
+                </div>
+                <div class="article-link__description-container">
+                  <p class="article-link__description">
+                    Final exam season is approaching quickly and there is no
+                    denying that the formal setting of the oral exams can be
+                    stress-inducing for parents and students alike.
+                  </p>
+                </div>
+                <div class="article-link__link-container">
+                  <a href="#">
+                    <img src="/icons/arrow_down_right.svg" />
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </section>
+        </main>
+
+        <footer class="footer">
+          <img class="footer__logo" src="/logos/north_wisp_logo.svg" />
+          <div class="footer__address-and-nav">
+            <div class="footer__address__container">
+              <p class="footer__address__description">
+                Irish language courses and resources
+              </p>
+              <p class="footer__address">
+                20 Clare Street, Dublin 63, <br />
+                Ireland, D08 TD38
+              </p>
+            </div>
+            <nav class="footer__nav">
+              <ul class="footer__nav__links-container">
+                <li class="footer__nav__link-li">
+                  <a href="#" class="footer__nav__link"> Gift certificates </a>
+                </li>
+                <li class="footer__nav__link-li">
+                  <a href="#" class="footer__nav__link"> About Us </a>
+                </li>
+                <li class="footer__nav__link-li">
+                  <a href="#" class="footer__nav__link">
+                    Employment Opportunities
+                  </a>
+                </li>
+                <li class="footer__nav__link-li">
+                  <a href="#" class="footer__nav__link"> License </a>
+                </li>
+                <li class="footer__nav__link-li">
+                  <a href="#" class="footer__nav__link">
+                    Educational programs
+                  </a>
+                </li>
+                <li class="footer__nav__link-li">
+                  <a href="#" class="footer__nav__link">
+                    Data Privacy Statement
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <ul class="footer__social-media__container">
+            <li>
+              <a href="#" class="footer__social-media__link">
+                <img src="/logos/social-media/facebook.svg" />
+              </a>
+            </li>
+            <li>
+              <a href="#" class="footer__social-media__link">
+                <img src="/logos/social-media/instagram.svg" />
+              </a>
+            </li>
+            <li>
+              <a href="#" class="footer__social-media__link">
+                <img src="/logos/social-media/linkedin.svg" />
+              </a>
+            </li>
+            <li>
+              <a href="#" class="footer__social-media__link">
+                <img src="/logos/social-media/youtube.svg" />
+              </a>
+            </li>
+            <li>
+              <a href="#" class="footer__social-media__link">
+                <img src="/logos/social-media/tiktok.svg" />
+              </a>
+            </li>
+          </ul>
+          <p class="footer__copyright">
+            Copyright © 2022 North Wisp. All rights reserved.
+          </p>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>
