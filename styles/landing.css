@@ -115,33 +115,6 @@
   scale: 80% 80%;
 }
 
-.consultation {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  column-gap: 50px;
-}
-
-.consultation__info {
-  padding-top: 80px;
-}
-
-.consultation__text {
-  font-size: var(--fs-h4);
-  font-weight: 500;
-  margin-bottom: 40px;
-}
-
-.consultation__image-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.consultation__image {
-  width: 100%;
-  height: auto;
-}
-
 .reviews {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -204,11 +177,6 @@
 
   .hero__button-container {
     order: 4;
-  }
-
-  .consultation {
-    grid-template-columns: 1fr;
-    row-gap: 50px;
   }
 
   .reviews {
