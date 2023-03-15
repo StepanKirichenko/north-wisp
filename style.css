@@ -212,57 +212,7 @@ body {
   max-width: 50%;
 }
 
-.landing__hero {
-  position: relative;
-  padding-top: 150px;
-  padding-bottom: 250px;
-}
-
-.landing__hero__heading {
-  font-family: var(--ff-gothic);
-  font-size: var(--fs-h1);
-  margin-bottom: 12px;
-}
-
-.landing__hero__paragraph {
-  max-width: 18em;
-  margin-bottom: 36px;
-  font-size: var(--fs-text-xxs);
-}
-
-.landing__hero__image__container {
-  position: absolute;
-  top: -20px;
-  right: -80px;
-}
-
-.landing__hero__image {
-  width: 100%;
-}
-
-.landing__hero__features {
-  list-style: none;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  column-gap: 30px;
-  row-gap: 50px;
-}
-
-.landing__hero__feature__number {
-  font-family: var(--ff-gothic);
-  font-size: var(--fs-h2);
-}
-
-.landing__hero__feature__heading {
-  font-size: var(--fs-text-xs);
-  margin-bottom: 8px;
-}
-
-.landing__hero__feature__paragraph {
-  font-size: var(--fs-text-xxs);
-}
-
-.landing__programs__list {
+.programs__list {
   list-style: none;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -311,155 +261,6 @@ body {
   position: absolute;
   bottom: 20px;
   right: 20px;
-}
-
-.team-member-info {
-  margin-top: 50px;
-  border: 2px solid var(--color-text);
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-
-.team-member-info__image-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.team-member-info__image {
-  width: 100%;
-  height: auto;
-}
-
-.team-member-info__details {
-  border-left: 2px solid var(--color-text);
-  display: flex;
-  flex-direction: column;
-}
-
-.team-member-info__name-section {
-  border-bottom: 2px solid var(--color-text);
-  padding-left: 70px;
-  padding-top: 15px;
-  padding-bottom: 15px;
-}
-
-.team-member-info__name {
-  font-size: var(--fs-h4);
-  font-weight: 700;
-}
-
-.team-member-info__job {
-  font-size: 12px;
-}
-
-.team-member-info__description-container {
-  padding: 20px 20px 20px 70px;
-  border-bottom: 2px solid var(--color-text);
-  flex: 1;
-}
-
-.team-member-info__description {
-  font-size: 16px;
-}
-
-.team-member-info__navigation {
-  display: flex;
-  justify-content: flex-end;
-}
-
-.team-member-info__button {
-  background: none;
-  border: none;
-  border-left: 2px solid var(--color-text);
-  padding: 16px;
-  cursor: pointer;
-}
-
-.team-member-info__button:active img {
-  scale: 80% 80%;
-}
-
-@media (max-width: 1200px) {
-  .team-member-info__description-container {
-    padding-left: 20px;
-  }
-
-  .team-member-info__name-section {
-    padding-left: 20px;
-  }
-}
-
-@media (max-width: 600px) {
-  .team-member-info {
-    grid-template-columns: 1fr;
-  }
-
-  .team-member-info__details {
-    border: none;
-    border-top: 2px solid var(--color-text);
-  }
-}
-
-.landing__consultation {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  column-gap: 50px;
-}
-
-.landing__consultation__info {
-  padding-top: 80px;
-}
-
-.landing__consultation__text {
-  font-size: var(--fs-h4);
-  font-weight: 500;
-  margin-bottom: 40px;
-}
-
-.landing__consultation__image-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.landing__consultation__image {
-  width: 100%;
-  height: auto;
-}
-
-.landing__reviews {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  column-gap: 30px;
-  margin-top: 50px;
-  margin-bottom: 50px;
-}
-
-.review-card {
-  border: 2px solid var(--color-text);
-  box-shadow: 2px 2px var(--color-text);
-  padding: 20px;
-  padding-bottom: 30px;
-}
-
-.review-card__name {
-  font-size: var(--fs-h4);
-  font-weight: 700;
-}
-
-.review-card__course {
-  font-size: var(--fs-h5);
-}
-
-.review-card__rating {
-  display: flex;
-  margin-top: 10px;
-  margin-bottom: 20px;
-}
-
-.review-card__text {
-  font-size: 16px;
 }
 
 .about__right-align {
@@ -523,29 +324,13 @@ body {
 }
 
 @media (max-width: 1200px) {
-  .landing__hero {
-    padding-top: 0;
-    padding-bottom: 50px;
-  }
-
-  .landing__hero__image__container {
-    position: static;
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-  }
-
-  .landing__programs__list {
+  .programs__list {
     grid-template-columns: 1fr 1fr;
     row-gap: 15px;
   }
 }
 
 @media (max-width: 900px) {
-  .landing__hero__features {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
   .footer__address-and-nav {
     grid-template-columns: 1fr;
     row-gap: 50px;
@@ -589,23 +374,13 @@ body {
     display: block;
   }
 
-  .landing__consultation {
-    grid-template-columns: 1fr;
-    row-gap: 50px;
-  }
-
-  .landing__reviews {
-    grid-template-columns: 1fr 1fr;
-    row-gap: 50px;
-  }
-
   .team-cards {
     grid-template-columns: 1fr 1fr;
   }
 }
 
 @media (max-width: 600px) {
-  .landing__hero__features {
+  .programs__list {
     grid-template-columns: 1fr;
   }
 
@@ -626,14 +401,6 @@ body {
 
   .section__text {
     max-width: 100%;
-  }
-
-  .landing__programs__list {
-    grid-template-columns: 1fr;
-  }
-
-  .landing__reviews {
-    grid-template-columns: 1fr;
   }
 
   .about__right-align {
