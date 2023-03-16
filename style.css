@@ -40,6 +40,7 @@ ol {
   --fs-text-xxs: 16px;
 
   --section-padding: 70px;
+  --border-margin: 60px;
 
   --border: 2px solid var(--color-text);
   --box-shadow: 2px 2px var(--color-text);
@@ -80,15 +81,9 @@ body {
 }
 
 .border {
-  margin: 60px;
+  margin: var(--border-margin);
   border: 2px solid var(--color-text);
-}
-
-.header--expanded {
-  position: fixed;
-  inset: 0;
-  z-index: 10;
-  background-color: var(--color-background);
+  min-height: calc(100vh - 2 * var(--border-margin));
 }
 
 .nav {
@@ -96,12 +91,6 @@ body {
   grid-template-columns: auto auto;
   align-items: center;
   margin: var(--section-padding) var(--section-padding) 30px;
-}
-
-.header--expanded .nav-holder {
-  position: fixed;
-  inset: 0;
-  z-index: 10;
 }
 
 .nav__links-holder {
@@ -323,12 +312,9 @@ body {
     row-gap: 30px;
   }
 
-  .border {
-    margin: 40px;
-  }
-
   :root {
     --section-padding: 30px;
+    --border-margin: 40px;
   }
 
   .nav {
@@ -344,7 +330,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 50px 0 0;
+    margin: 50px 0 var(--section-padding);
   }
 
   .nav__link {
@@ -369,12 +355,9 @@ body {
     grid-template-columns: 1fr;
   }
 
-  .border {
-    margin: 16px;
-  }
-
   :root {
     --section-padding: 16px;
+    --border-margin: 16px;
 
     --fs-h1: 36px;
     --fs-h2: 30px;
