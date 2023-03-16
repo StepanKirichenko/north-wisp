@@ -84,11 +84,24 @@ body {
   border: 2px solid var(--color-text);
 }
 
+.header--expanded {
+  position: fixed;
+  inset: 0;
+  z-index: 10;
+  background-color: var(--color-background);
+}
+
 .nav {
   display: grid;
   grid-template-columns: auto auto;
   align-items: center;
   margin: var(--section-padding) var(--section-padding) 30px;
+}
+
+.header--expanded .nav-holder {
+  position: fixed;
+  inset: 0;
+  z-index: 10;
 }
 
 .nav__links-holder {
@@ -332,8 +345,6 @@ body {
     flex-direction: column;
     align-items: center;
     margin: 50px 0 0;
-    padding-bottom: 50px;
-    min-height: 58vh;
   }
 
   .nav__link {
@@ -379,9 +390,5 @@ body {
 
   .about__text__right-align {
     text-align: start;
-  }
-
-  .nav__links-holder.visible {
-    min-height: 67vh;
   }
 }
